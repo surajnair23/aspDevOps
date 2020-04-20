@@ -51,17 +51,7 @@ C:\Users\huang\source\repos\adminApp\adminApp\obj\Debug\netcoreapp3.1\adminApp.p
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\publish\web.config
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\web.config
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\publish\web.config
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\adminApp.deps.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\adminApp.runtimeconfig.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\appsettings.Development.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\appsettings.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\publish\adminApp.deps.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\publish\adminApp.runtimeconfig.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\publish\appsettings.Development.json
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\out\publish\appsettings.json
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\publish\adminApp.deps.json
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\publish\adminApp.runtimeconfig.json
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
