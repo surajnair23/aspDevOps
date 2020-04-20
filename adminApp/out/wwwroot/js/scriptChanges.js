@@ -1,8 +1,9 @@
 var globData=null;
 var globFeedbck = null;
 var temp = 0;
-function fetchData(){
-    const url = 'http://springdevops:8080/allPlaylist';
+var connUrl = 'http://springdevops:8080';
+function fetchData() {
+    const url = connUrl +'/ allPlaylist';
     fetch(url,{method:'GET'})
     .then((response) => {
         return response.json();
@@ -12,7 +13,7 @@ function fetchData(){
         capturePlaylist(globData);
     });
 
-    const urll = 'http://springdevops:8080/allFeedbacks';
+    const urll = connUrl+'/allFeedbacks';
     fetch(urll,{method:'GET'})
     .then((response)=>{ return response.json(); })
     .then((data)=>{
@@ -21,8 +22,8 @@ function fetchData(){
     });
 }
 
-function delUrl(id){
-    const urlDel = "http://springdevops:8080/delPlaylist?key=" + id;
+function delUrl(id) {
+    const urlDel = connUrl + "/delPlaylist?key=" + id;
     fetch(urlDel, { method: 'GET' })
     .then((response) => {
         if (response.status === "200") {
@@ -76,7 +77,7 @@ function editPlaylist() {
         "playlist_url": document.getElementById("editUrl").value
     }
     //fetch api to send the JSON
-    const editUrl = "http://springdevops:8080/editIt?key=" + currId;
+    const editUrl = connUrl + "/editIt?key=" + currId;
     fetch(editUrl, {
         method: 'POST',
         headers: {
@@ -102,7 +103,8 @@ function addPlaylist(){
         "playlist_name" : document.getElementById("selType").value,
         "playlist_url"  : document.getElementById("addUrl").value
     };
-    fetch("http://springdevops:8080/addPlaylist", {
+    const entrypoint = connUrl + "/addPlaylist";
+    fetch(entrypoint, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -181,7 +183,8 @@ function sendEmail(email){
             "email" : email,
             "response" : res
         };
-        fetch("http://springdevops:8080/sendEmail", {
+        const entrpoint = connUrl + "/sendEmail";
+        fetch(entrypoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

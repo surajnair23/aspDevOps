@@ -90,9 +90,7 @@ D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\D
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\adminApp.TagHelpers.input.cache
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\adminApp.TagHelpers.output.cache
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\adminApp.RazorCoreGenerate.cache
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Age.cshtml.g.cs
-D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Count.cshtml.g.cs
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Gender.cshtml.g.cs
 D:\Courseware\MIS at NEU\DevOps\Final project\Demo_17\dotnetAdmin\adminApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
