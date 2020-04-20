@@ -1,0 +1,56 @@
+﻿@{
+	ViewBag.Title = "Age analysis";
+}
+
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<title>Age analysis</title>
+</head>
+<body>
+	
+	<br /><br />
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<div id="chartContainer2"></div>
+
+	<script type="text/javascript">
+
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer2", {
+				theme: "light2",
+				animationEnabled: true,
+				title: {
+					text: "Comparison of the average rating among age groups"
+				},
+				data: [
+					{
+						type: "column",
+						dataPoints: [
+                            { y: @ViewBag.ages[0].rate, label: "@ViewBag.ages[0].age" },
+                            { y: @ViewBag.ages[1].rate, label: "@ViewBag.ages[1].age" },
+                            { y: @ViewBag.ages[2].rate, label: "@ViewBag.ages[2].age" },
+                            { y: @ViewBag.ages[3].rate, label: "@ViewBag.ages[3].age" },
+                            { y: @ViewBag.ages[4].rate, label: "@ViewBag.ages[4].age" },
+							{ y: @ViewBag.ages[5].rate, label: "@ViewBag.ages[5].age" },
+						]
+					}
+				]
+			});
+			chart.render();
+		};
+	</script>
+
+</body>
+</html>

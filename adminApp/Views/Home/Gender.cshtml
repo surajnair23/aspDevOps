@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Gender analysis";
+}
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<title>Gender analysis</title>
+</head>
+<body>
+	<br /><br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<div id="chartContainer1"></div>
+
+	<script type="text/javascript">
+
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer1", {
+				theme: "light2",
+				animationEnabled: true,
+				title: {
+					text: "Comparison of the average rating between female and male"
+				},
+				data: [
+					{
+						type: "column",
+						dataPoints: [
+                            { y: @ViewBag.genders[0].rate, label: "@ViewBag.genders[0].gender" },
+							{ y: @ViewBag.genders[1].rate, label: "@ViewBag.genders[1].gender" }
+						]
+					}
+				]
+			});
+			chart.render();
+		};
+	</script>
+
+</body>
+</html>

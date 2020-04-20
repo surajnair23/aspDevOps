@@ -1,0 +1,80 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section JavaScript
+{
+	<script type="text/javascript" src="@Url.Content("/js/scriptChanges.js")"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="@Url.Content("/js/jquery.validate.js")"></script>
+	<script type="text/javascript" src="@Url.Content("/js/jquery-3.4.1.js")"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="@Url.Content("/css/localCss.css")">
+}
+<div class="row">
+	<div class="container-fluid lg-3">
+		<h2>Current Playlists</h2>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>URL</th>
+				</tr>
+			</thead>
+			<tbody id="playlistEditor"></tbody>
+		</table>
+	</div>
+</div>
+<div class="row">
+	<button class="btn btn-success" onclick="showAdd()">Add a Playlist</button>
+	<button class="btn btn-primary" onclick="showEdit()">Edit a Playlist</button>
+</div>
+<div class="row">
+	<div id="addPlaylist" style="display: none;" class="col-lg-4">
+		<h3>Add a new playlist:</h3>
+		<form onsubmit="addPlaylist()" class="form-group">
+			<label for="selType">Choose type of playlist:</label>
+			<select id="selType" class="form-control col-sm-2">
+				<option value="Calm">Calm</option>
+				<option value="Exciting">Exciting</option>
+				<option value="Happy">Happy</option>
+				<option value="Encouraging">Encouraging</option>
+			</select><br />
+			<label for="addUrl">Enter the URL:</label>
+			<input type="text" id="addUrl" class="form-control col-sm-2" placeholder="Enter a URL 10-100 characters" required />
+			<br /><button type="submit" class="btn btn-success col-sm-3">Add Playlist</button>
+		</form>
+	</div>
+	<div id="editPlaylist" style="display: none;" class="col-lg-4">
+		<h3>Edit an existing Playlist:</h3>
+		<form onsubmit="editPlaylist()" class="form-group">
+			<label for="editSel">Choose id of playlist you want to Edit:</label>
+			<select id="editSel" onchange="findUrl()" class="form-control col-sm-2">
+				<option value="" disabled selected>Select your option</option>
+			</select><br />
+			<label for="editUrl">Enter the URL:</label>
+			<input type="text" id="editUrl" class="form-control col-sm-2" placeholder="Enter a URL 10-100 characters"><br />
+			<button type="submit" class="btn btn-primary col-sm-3">Edit URL</button>
+		</form>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<h2>List of feedback</h2>
+	<div>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Rating</th>
+					<th>Email</th>
+					<th>Comments</th>
+				</tr>
+			</thead>
+			<tbody id="feedbackEditor"></tbody>
+		</table>
+	</div>
+</div>
+
