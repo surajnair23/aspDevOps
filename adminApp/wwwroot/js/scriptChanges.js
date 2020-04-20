@@ -1,7 +1,9 @@
 var globData=null;
 var globFeedbck = null;
 var temp = 0;
-const connUrl = "http://localhost:8080"
+//cannot use cont fr connurl as it will use multiple times as global scope, hence treat like multiple declarations
+var awsLink = "a9ce74ec5912947ebac9f77ae44c5cda-14636750.us-east-1.elb.amazonaws.com";
+var connUrl = "http://"+awsLink+":8080";
 function fetchData() {
     const url = connUrl + '/allPlaylist';
     fetch(url,{method:'GET'})
